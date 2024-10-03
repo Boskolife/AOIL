@@ -1,0 +1,487 @@
+html {
+    scroll-behavior: smooth;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+
+        @include media('<tablet') {
+            width: 5px;
+        }
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: $white;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $green;
+        border-radius: 10px;
+    }
+}
+
+.white_footer {
+    position: relative;
+}
+
+.body_lock {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main_btn {
+    border-radius: 5px;
+    border: 1px solid $green;
+    padding: 10px 40px;
+    color: $green;
+    @include adaptive-value("font-size", 24, 20, 1);
+    font-weight: 700;
+    letter-spacing: -0.24px;
+    transition: all .3s ease 0s;
+    display: inline-block;
+
+    // &:hover {
+    //     background-color: $green;
+    //     color: $yellow;
+    //     transition: all .3s ease 0s;
+    // }
+
+    @media (hover:hover) {
+
+        &:hover {
+            background-color: $green;
+            color: $yellow;
+            transition: all .3s ease 0s;
+        }
+    }
+}
+
+//--Main Page
+
+.main_section {
+    position: relative;
+
+    .main_bg {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .main_text {
+        max-width: 592px;
+        height: 100dvh;
+        align-content: center;
+        @include adaptive-value("padding-left", 105, -100, 1);
+
+        @include media('<desktop') {
+            padding: 0 15px;
+        }
+    }
+
+    .main_title {
+        color: #258E03;
+        @include adaptive-value("font-size", 48, 36, 1);
+        letter-spacing: -0.48px;
+        @include adaptive-value("margin-bottom", 65, 25, 1);
+        font-weight: 400;
+    }
+
+    .main_info_blocks {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        @include media('<desktop') {
+            flex-wrap: wrap
+        }
+    }
+
+    .block_item {
+        border: 2px solid #FBE115;
+        background: #258E03;
+        width: 100%;
+        border-bottom: none;
+        padding: 10px 20px 30px 20px;
+        text-align: center;
+
+        @include media('<desktop') {
+            height: max-content;
+            padding: 10px 20px;
+            border: none;
+            border-bottom: 2px solid #FBE115;
+        }
+
+        &:first-child {
+            border-left: none;
+            text-align: end;
+
+            @include media('<desktop') {
+                text-align: center;
+            }
+
+            .item_descr {
+                margin-left: auto;
+                text-align: end;
+
+
+                @include media('<desktop') {
+                    text-align: center;
+                    margin: 0 auto;
+                }
+
+            }
+        }
+
+        &:nth-child(2) {
+            width: max-content;
+
+            @include media('<desktop') {
+                width: 100%;
+            }
+
+            .item_descr {
+                margin: 0 auto;
+            }
+        }
+
+        &:nth-child(3) {
+            width: max-content;
+
+            @include media('<desktop') {
+                width: 100%;
+            }
+
+            .item_descr {
+                margin: 0 auto;
+            }
+        }
+
+        &:nth-child(4) {
+            width: max-content;
+
+            @include media('<desktop') {
+                width: 100%;
+            }
+
+            .item_descr {
+                margin: 0 auto;
+            }
+        }
+
+        &:last-child {
+            border-right: none;
+            text-align: start;
+
+            @include media('<desktop') {
+                text-align: center;
+            }
+
+            .item_descr {
+                max-width: 150px;
+                margin-right: auto;
+                text-align: start;
+
+                @include media('<desktop') {
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }
+
+
+        }
+    }
+
+    .big_text {
+        font-weight: 900;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+
+    .item_title {
+        color: $white;
+        letter-spacing: -0.4px;
+        text-transform: lowercase;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 10px;
+        white-space: nowrap;
+    }
+
+    .lc {
+        font-weight: 900;
+        font-size: 40px;
+        text-transform: lowercase;
+    }
+
+    .item_descr {
+        color: $yellow;
+        @include adaptive-value("font-size", 20, 16, 1);
+        @include adaptive-value("min-width", 200, 0, 1);
+        letter-spacing: -0.2px;
+        min-width: 200px;
+        max-width: 200px;
+        width: 100%;
+        text-align: center;
+
+        @include media('<widescreen') {
+            min-width: 130px;
+        }
+    }
+}
+
+.about_us {
+    padding: 10px 0;
+
+    .content {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+        gap: 15px;
+
+        @include media('<desktop') {
+            grid-template: 1fr / 1fr;
+        }
+
+        @include media('<tablet') {
+            gap: 10px
+        }
+    }
+
+    .left_side-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about_us_text-wrap {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        @include adaptive-value("padding-top", 150, 80, 1);
+        @include adaptive-value("padding-bottom", 150, 80, 1);
+        @include adaptive-value("padding-left", 100, 20, 1);
+        padding-right: 30px;
+
+        @include media('<desktop') {
+            justify-content: center;
+        }
+
+        @include media('<tablet') {
+            gap: 10px
+        }
+    }
+
+    .arrows {
+        @include adaptive-value("width", 89, 48, 1);
+        @include adaptive-value("height", 85, 44, 1);
+        margin-top: 15px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .about_us_text-body {
+        max-width: 411px;
+        width: 100%;
+    }
+
+    .about_us_text-title {
+        color: $green;
+        @include adaptive-value("font-size", 32, 24, 1);
+        font-weight: 400;
+        letter-spacing: -0.32px;
+        margin-bottom: 5px;
+
+        .big_text {
+            @include adaptive-value("font-size", 64, 40, 1);
+        }
+    }
+
+    .about_us_text-descr {
+        color: $black;
+        @include adaptive-value("font-size", 20, 16, 1);
+        letter-spacing: -0.2px;
+    }
+
+    .about_us_img-wrap {
+        display: grid;
+        grid-template: 1fr / auto auto;
+        gap: 15px;
+
+        @include media('<tablet') {
+            gap: 10px
+        }
+
+        .about_us_img {
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .img_2 {
+            width: 100%;
+        }
+
+        .img_3 {
+            max-width: 270px;
+            width: 100%;
+        }
+    }
+
+    .img_1 {
+        height: 100%;
+        width: 100%;
+
+        @include media('<desktop') {
+            max-height: 560px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.target {
+    @include adaptive-value("padding-bottom", 280, 150, 1);
+
+    .content {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+        gap: 15px;
+        align-items: end;
+        position: relative;
+
+        @include media('<desktop') {
+            grid-template: 1fr / 1fr;
+        }
+    }
+
+    .target_img-wrap {
+        @include media('<desktop') {
+            order: 1;
+            margin-bottom: 50px;
+            height: 560px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .target_img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            @include media('<desktop') {
+                position: absolute;
+                inset: 0;
+                z-index: -1;
+            }
+        }
+    }
+
+    .target_text {
+        @include adaptive-value("font-size", 24, 20, 1);
+        color: $white;
+        letter-spacing: -0.24px;
+        @include adaptive-value("padding-top", 50, 24, 1);
+        @include adaptive-value("padding-bottom", 50, 24, 1);
+        @include adaptive-value("padding-right", 80, 24, 1);
+        @include adaptive-value("padding-left", 40, 24, 1);
+        max-width: 1256px;
+        width: 100%;
+        position: absolute;
+        top: 20%;
+        right: 0;
+        border-radius: 5px 0 0 5px;
+        background-color: rgba(38, 142, 3, 0.8);
+
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+        @include media('<desktop') {
+            width: calc(100% - 40px);
+            margin: 0 auto;
+            position: static;
+        }
+
+        b {
+            text-transform: uppercase;
+        }
+    }
+
+    .target_descr-block {
+        @include adaptive-value("padding-bottom", 150, 15, 1);
+        display: flex;
+        flex-direction: column;
+        @include adaptive-value("gap", 130, 60, 1);
+
+        @include media('<desktop') {
+            order: 2;
+            align-items: center;
+            padding: 0 20px;
+        }
+    }
+
+    .block_item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+
+        @include media('<desktop') {
+            flex-direction: column;
+        }
+    }
+
+    .drop {
+        margin-top: 10px;
+    }
+
+    .block_item-text {
+        color: $gray;
+        @include adaptive-value("font-size", 24, 20, 1);
+        font-weight: 400;
+        line-height: 112%;
+        letter-spacing: -0.24px;
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+.main_page_footer_bg {
+    position: absolute;
+    bottom: 0;
+    z-index: -2;
+    @include adaptive-value("height", 800, 670, 1);
+    width: 100%;
+    object-fit: cover;
+}
