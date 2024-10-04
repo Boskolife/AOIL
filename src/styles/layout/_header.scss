@@ -1,5 +1,11 @@
 #header {
     padding: 40px 0 35px 0;
+    border-bottom: 3px solid #E5E5E5;
+    background: #FFF;
+
+    @include media('<tablet') {
+        border: none
+    }
 
     .container {
         @include adaptive-value("padding-left", 105, -100, 1);
@@ -99,10 +105,15 @@
         letter-spacing: -0.2px;
         transition: all .3s ease 0s;
 
-        &:hover {
-            color: $green;
-            transition: all .3s ease 0s;
+        @media (hover:hover) {
+
+            &:hover {
+                color: $green;
+                transition: all .3s ease 0s;
+            }
+
         }
+
 
         @include media('<widescreen') {
             font-weight: 700;

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AOIL</title>
+    <link rel="stylesheet" href="/styles/main.scss">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/main.js" defer></script>
+</head>
+
+<body>
+    {{> header }}
+    <main>
+        <section class="certificate">
+            <div class="certificate_bg">
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="swiper swiper_certificate">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide_img">
+                                    <img src="./images/certificate/certificate_1.webp" alt="certificate">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_img">
+                                    <img src="./images/certificate/certificate_2.webp" alt="certificate">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_img">
+                                    <img src="./images/certificate/certificate_3.webp" alt="certificate">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificate_text">
+                        <div class="certificate_title-wrap">
+                            <h2 class="certificate_title">Продукція відповідає вимогам:</h2>
+                            <img class="arrows" src="./images/double_arrow_green.svg" alt="arrows">
+                        </div>
+                        <ul class="certificate_list">
+                            <li class="list_item">- олія соняшникова згідно з ДСТУ 4492:2017;</li>
+                            <li class="list_item">- олія ріпакова згідно ДСТУ  8175:2015;</li>
+                            <li class="list_item">- стандарту КНР GB2716 та виготовляється відповідно до вимог
+                                затверджених у встановленому порядку</li>
+                            <li class="list_item">-  ТР 44856476.010-2023 Регламент виробничий технологічний на
+                                виробництво рафінованих дезодорованих олій та жирів на лінії ДЕ СМЕТ (Бельгія);</li>
+                            <li class="list_item">- ТІ 44856476.01-2023 Технологічна інструкція підготовчої дільниці з
+                                приймання і зберігання сировини;</li>
+                            <li class="list_item">- ТІ 44856476.02-2023 Технологічна інструкція на виробництво олії
+                                рослинної нерафінованої пресової;</li>
+                            <li class="list_item">- ТІ 44856476.03-2023 Технологічна інструкція. Фасування олії.
+                                Дільниця 2</li>
+                            <li class="list_item">- ТІ 44856476.04-2023 Технологічна інструкція. Фасування олії.
+                                Дільниця 1</li>
+                        </ul>
+                    </div>
+                    <div class="certificate_descr">
+                        <img class="drops" src="./images/drop_2.webp" alt="drops">
+                        <p class="descr_text">
+                            На виробництві впроваджена та функціонує система менеджменту безпеки
+                            продукції, підприємство успішно пройшло сертифікаційний аудит на відповідність вимог
+                            міжнародного стандарту ISO 22000:2018, отримали Сертифікат відповідності вимогам стандарту
+                            «ХАЛЯЛЬ» та Свідоцтво про КОШЕРНІСТЬ.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {{> footer }}
+</body>
+
+</html>

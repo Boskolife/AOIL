@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AOIL</title>
+    <link rel="stylesheet" href="/styles/main.scss">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <script type="module" src="/js/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500700,900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    {{> header }}
+    <main>
+        <section class="product_two product">
+            <div class="container">
+                <div class="content">
+                    <div class="product_head">
+                        <picture class="drops">
+                            <source srcset="./images/drop_2.webp" media="(max-width:650px)">
+                            <img src="./images/drop_3.webp" alt="drops">
+                        </picture>
+                        <p class="product_text">
+                            АОИЛ пропонує олію соняшникову рафіновану, дезодоровану, виморожену марки П, яка має
+                            природний
+                            зміст вітаміну Е і виготовляється згідно ДСТУ 4492:2017
+                            <br>
+                            <br>
+                            На виробництві впроваджена та функціонує система менеджменту безпеки продукції, підприємство
+                            успішно пройшло сертифікаційний аудит на відповідальність вимог міжнародного стандарту ISO
+                            22000:2018. Продукція відповідає вимогам стандарту «Халяль» та виробляється під наглядом
+                            Комітету з Кашруту, що підтверджуються Свідоцтвом про КОШЕРНІСТЬ.
+                        </p>
+                        <div class="oil">
+                            <img src="./images/production/oil.webp" alt="oil">
+                        </div>
+                    </div>
+                    <div class="assortment">
+                        <div class="assortment_item-wrap">
+                            <div class="assortment_item item_4 item_7">
+                                <div class="item_img">
+                                    <img src="./images/production/product_1/assort_img_6.webp" alt="image not found">
+                                    <img src="./images/production/product_1/assort_img_7.webp" alt="image not found">
+                                </div>
+                                <div class="item_decsr">
+                                    <h3 class="item_title">
+                                        Олія соняшникова нерафінована невиморожена першого ґатунку
+                                    </h3>
+                                    <div class="item_chars">
+                                      <span class="char_elem">Термін зберігання: <b>24 м</b></span>
+                                    </div>
+                                    <span class="sub_title">Навантаження</span>
+                                    <div class="item_info">
+                                        <div class="info_block">
+                                            <span>Навантаження: в флексі танк <b>24МТ</b></span>
+                                        </div>
+                                        <div class="info_block">
+                                            <span>автоцистерна <b>24-26МТ</b></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {{> footer }}
+</body>
+
+</html>

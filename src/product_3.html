@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AOIL</title>
+    <link rel="stylesheet" href="/styles/main.scss">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <script type="module" src="/js/main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500700,900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    {{> header }}
+    <main>
+        <section class="product_three product">
+            <div class="container">
+                <div class="content">
+                    <div class="product_head">
+                        <picture class="drops">
+                            <source srcset="./images/drop_2.webp" media="(max-width:650px)">
+                            <img src="./images/drop_3.webp" alt="drops">
+                        </picture>
+                        <p class="product_text">
+                            АОИЛ пропонує шрот соняшниковий тостований високопротеїновий є високоякісним інгредієнтом в
+                            складанні поживних комбінованих кормів для тваринництва.
+                        </p>
+
+                    </div>
+                    <div class="assortment">
+                        <div class="assortment_item-wrap">
+                            <div class="assortment_item">
+                                <div class="item_img">
+                                    <img src="./images/production/product_1/assort_img_8.webp" alt="image not found">
+                                </div>
+                                <div class="item_decsr">
+                                    <h3 class="item_title">
+                                        Шрот соняшниковий тостований
+                                    </h3>
+                                    <span class="sub_title">Специфікація:</span>
+                                    <div class="item_chars">
+                                        <span class="char_elem">- протеїн (на сиру речовину) – мін. 35%;</span>
+                                        <span class="char_elem"> - клітковина (на сиру речовину) – макс. 21%;</span>
+                                        <span class="char_elem">- жир (на сиру речовину) – макс. 2,0%;</span>
+                                        <span class="char_elem">- вологість макс. – 12%.</span>
+                                    </div>
+                                    <span class="sub_title">Навантаження</span>
+                                    <div class="item_info">
+                                        <div class="info_block">
+                                            <span>Насипом в самоскиди судові партії від <b>3000 МТ</b></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    {{> footer }}
+</body>
+
+</html>
